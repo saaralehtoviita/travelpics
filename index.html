@@ -55,6 +55,9 @@
             <li class="nav-item">
                 <a class="nav-link" href="#tietoja">Tietoja</a>
                 </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#yhteydenotto">Yhteydenotto</a>
+                </li>
             <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown">
                     <i class="bi bi-images"></i></a> 
@@ -81,8 +84,11 @@
                         <div class="display-2">Kuvia Etelä-Amerikasta</div>
                         <div class="display-5 text-muted">Alaotsikko?</div>
                     </h1>
-                    <p class="lead my-4 text-muted">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                    <a href="kuvat.html" class="btn button-custom btn-lg">Lisää kuvia</a>
+                    <p class="lead my-4 text-muted">Tältä sivulta löydät <a href="#tietoja" style="font-weight: bold; 
+                    text-decoration: none; color: grey">tietoja</a> ja kuvia niistä Etelä-Amerikan maista, 
+                        joissa matkustin vuosina 2015 & 2016. 
+                    </p>
+                    <a href="kuvat.html" class="btn button-custom btn-lg">Kuvakaruselliin</a>
                 </div>
                 <div class="col-md-5 text-center">
                     <img class="img-fluid mt-5 rounded border" src="Kuvat/Kuva1_p.JPG" alt="Kuva kolombialaisesta sademetsästä">
@@ -196,6 +202,46 @@
             </div>
         </div>
 
+
+    </section>
+
+    <!-- Yhteydenottolomake -->
+
+    <section id="yhteydenotto">
+        <div class="container-lg">
+            <div class="text-center">
+                <h2>Ota yhteyttä</h2>
+                <p class="lead">Haluatko kysyä jotain Etelä-Amerikassa matkustamisesta tai reppureissaamisesta ylipäänsä?</p>
+            </div>
+            <div class="row justify-content-center-my-5">
+                <div class="col-lg-6">
+                    <form>
+                        <label for="email" class="form-label">Sähköpostiosoite:</label>
+                        <input type="email" class="form-control" id="email" placeholder="etumi.sukunimi@esimerkki.com">
+                        <label for="name" class="form-label">Nimi:</label>
+                        <input type="text" class="form-control" id="name" placeholder="nimi">
+
+                        <label for="subject" class="form-label">Mikä on kysymykseksi?</label>
+                        <select class="form-select" id="aihe">
+                            <option value="reppureissaaminen" selected>Reppureissaaminen</option>
+                            <option value="kolumbia">Kolumbia</option>
+                            <option value="ecuador">Ecuador</option>
+                            <option value="peru">Peru</option>
+                            <option value="espanjankieli">Espanjan kieli</option>
+                        </select>
+                        
+                        <div class="form-floating mb-4 mt-3">
+                            <textarea id="kysymys" class="form-control" style="height: 100px"></textarea>
+                            <label for="kysymys">Kysymyksesi...</label>
+                        </div>
+                        <div class="mb-4 text-center">
+                            <button type="submit" class="btn button-custom">Lähetä</button>
+                        </div>
+                        
+                    </form>
+                </div>
+            </div>
+        </div>
 
     </section>
 
