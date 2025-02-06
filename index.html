@@ -5,7 +5,7 @@
     <meta http-equiv="refresh" content = "60">
     <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
     <!--sets the width of the page to follow the screen-width of the device -->
-    <title>Travel pictures from South America</title>
+    <title>Information - traveling in South America</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
@@ -38,7 +38,7 @@
                 <a href="index.html" class="navbar-brand">
                 <span>
                     <i class="bi bi-globe-americas"></i>
-                    Kuvia Etelä-Amerikasta
+                    Etelä-Amerikka info
                     </span>
                     </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
@@ -81,8 +81,7 @@
             <div class="row justify-content-center align-items-center">
                 <div class="col-md-5 text-center text-md-start"> <!--tämä elementti on 12 saraketta leveä kunnes tullaan keskikoon näytölle jolloin muuttuu 5 sarakkeeksi-->
                     <h1 class="mt-5">
-                        <div class="display-2">Kuvia Etelä-Amerikasta</div>
-                        <div class="display-5 text-muted">Alaotsikko?</div>
+                        <div class="display-2">Tietoa & kuvia Etelä-Amerikasta</div>
                     </h1>
                     <p class="lead my-4 text-muted">Tältä sivulta löydät <a href="#tietoja" style="font-weight: bold; 
                     text-decoration: none; color: grey">tietoja</a> ja kuvia niistä Etelä-Amerikan maista, 
@@ -111,19 +110,19 @@
                     <div class="card-body text-center py-4">
                         <h4 class="card-title">Kolumbia</h4>
                         <p class="lead card-subtitle">Täältä löydät lisää kuvia Kolumbiasta</p>
-                        <a href="#" class="btn button-custom">Lisää kuvia Kolumbiasta</a> <!--linkki puuttuu, lisätään oikealle sivulle-->
+                        <a href="#" class="btn button-custom">Lisää kuvia Kolumbiasta</a> <!--linkki puuttuu, lisätään myöhemmin-->
                     </div>
                 </div>
             </div>
            
 
-           <div class="col-10 col-lg-4 col-xl-3">
+           <div class="col-10 col-lg-4 col-xl-3"> <!--elementit vierekkäin suurilla näytöillä-->
             <img src="Galapagos1_p.JPG" class="card-img-top rounded border">
             <div class="card border-0">
                 <div class="card-body text-center py-4">
                     <h4 class="card-title">Ecuador</h4>
                     <p class="lead card-subtitle">Täältä löydät lisää kuvia Ecuadorista</p>
-                    <a href="#" class="btn button-custom">Lisää kuvia Ecuadorista</a> <!--linkki puuttuu, lisätään oikealle sivulle-->
+                    <a href="#" class="btn button-custom">Lisää kuvia Ecuadorista</a> <!--linkki puuttuu, lisätään myöhemmin-->
                 </div>
             </div>
         </div>
@@ -143,14 +142,14 @@
 
             <div class="row my-5 g-5 justify-content-around align-items-center">
                 <div class="col-6 col-lg-4">
-                    <img src="Kuva3_p.JPG" class="img-fluid rounded border" alt="kuva">
+                    <img src="Kuva3_p.JPG" class="img-fluid rounded" alt="kuva">
                 </div>
 
             <!--haitari-->
-            <div class="col-lg-6">
-            <div class="accordion" id="tiedot">
+            <div class="col-lg-6"> <!--haitari kuvan vieressä suurilla näytöillä-->
+            <div class="accordion" id="tiedot"> <!--tiedot id tärkeä, siihen viitataan haitarin eri osioissa (data-bs-parent)-->
                 <div class="accordion-item">
-                    <h2 class="accordion-header" id="headingKolumbia">
+                    <h2 class="accordion-header" id="headingKolumbia"> <!--erillinen id jokaiselle haitarin osiolle-->
                         <button class="accordion-button btn btn-info" type="button" data-bs-toggle="collapse"
                         data-bs-target="#collapseKolumbia" aria-expanded="true" aria-controls="collapsekolumbia">
                         Mitä huomioida matkatessa Kolumbiaan
@@ -205,7 +204,8 @@
 
     </section>
 
-    <!-- Yhteydenottolomake -->
+
+    <!--taulukko-->
 
     <footer>
         <h2 class="mt-4">Yhteystiedot</h2>
